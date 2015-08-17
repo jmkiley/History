@@ -13,11 +13,9 @@ class HistoryContainerViewController: UIViewController {
     @IBOutlet weak var topMenuView: UIView!
     @IBOutlet weak var backgroundContainerView: UIView!
     @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var bottomMenuView: UIView!
     @IBOutlet weak var toggleMenuBBI: UIBarButtonItem!
     
     @IBOutlet weak var topMenuHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var bottomMenuHeightConstraint: NSLayoutConstraint!
     
     var areMenusOpen = false
     let closeMenuHeight: CGFloat = 0.0
@@ -71,13 +69,11 @@ class HistoryContainerViewController: UIViewController {
         self.areMenusOpen = !self.areMenusOpen
         
         if self.areMenusOpen {
-            // expand top and bottom menus
+            // expand top menus
             self.topMenuHeightConstraint.constant = self.openMenuHeight
-            self.bottomMenuHeightConstraint.constant = self.openMenuHeight
         } else {
-            // shrink top and bottom menus to HIDDEN
+            // shrink top menus to HIDDEN
             self.topMenuHeightConstraint.constant = self.closeMenuHeight
-            self.bottomMenuHeightConstraint.constant = self.closeMenuHeight
         }
         
         UIView.animateWithDuration(5.0, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.0, options: .CurveEaseIn, animations: {

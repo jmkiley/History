@@ -24,10 +24,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFu-7a-0LO" userLabel="BackgroundContainerView">
-                                <rect key="frame" x="0.0" y="64" width="600" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nE5-cL-D2L" userLabel="ContainerView">
-                                        <rect key="frame" x="16" y="16" width="568" height="472"/>
+                                        <rect key="frame" x="16" y="16" width="568" height="504"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
@@ -39,26 +39,16 @@
                                     <constraint firstItem="nE5-cL-D2L" firstAttribute="leading" secondItem="TFu-7a-0LO" secondAttribute="leading" constant="16" id="z82-It-wua"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSZ-nM-mU9" userLabel="BottomMenuView">
-                                <rect key="frame" x="0.0" y="568" width="600" height="0.0"/>
-                                <color key="backgroundColor" red="0.98823529409999999" green="0.30980392159999998" blue="0.031372549020000001" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" id="AbK-1l-yhE"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="TFu-7a-0LO" secondAttribute="trailing" id="1Sh-Lq-K4q"/>
                             <constraint firstItem="bJ5-3o-XGE" firstAttribute="top" secondItem="oJT-lJ-jJU" secondAttribute="bottom" id="5Ui-om-MB4"/>
                             <constraint firstItem="TFu-7a-0LO" firstAttribute="top" secondItem="bJ5-3o-XGE" secondAttribute="bottom" id="9N9-Gf-uQ9"/>
-                            <constraint firstItem="aSZ-nM-mU9" firstAttribute="top" secondItem="TFu-7a-0LO" secondAttribute="bottom" id="GQB-kU-qu5"/>
+                            <constraint firstItem="8KD-QY-0fn" firstAttribute="top" secondItem="TFu-7a-0LO" secondAttribute="bottom" id="9sg-Al-95X"/>
                             <constraint firstAttribute="trailing" secondItem="bJ5-3o-XGE" secondAttribute="trailing" id="IJP-gC-UX3"/>
                             <constraint firstItem="TFu-7a-0LO" firstAttribute="leading" secondItem="3au-7I-jg4" secondAttribute="leading" id="JgP-nx-qNV"/>
-                            <constraint firstAttribute="trailing" secondItem="aSZ-nM-mU9" secondAttribute="trailing" id="Wni-4c-6gM"/>
                             <constraint firstItem="bJ5-3o-XGE" firstAttribute="leading" secondItem="3au-7I-jg4" secondAttribute="leading" id="fRE-Ij-zF6"/>
-                            <constraint firstItem="8KD-QY-0fn" firstAttribute="top" secondItem="aSZ-nM-mU9" secondAttribute="bottom" constant="32" id="h1U-4X-ufh"/>
-                            <constraint firstItem="aSZ-nM-mU9" firstAttribute="leading" secondItem="3au-7I-jg4" secondAttribute="leading" id="mBt-rz-GxM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bcc-zg-zSd">
@@ -70,8 +60,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="backgroundContainerView" destination="TFu-7a-0LO" id="eJI-sD-Aqq"/>
-                        <outlet property="bottomMenuHeightConstraint" destination="AbK-1l-yhE" id="EmV-23-OFd"/>
-                        <outlet property="bottomMenuView" destination="aSZ-nM-mU9" id="O3d-jS-Aa2"/>
                         <outlet property="containerView" destination="nE5-cL-D2L" id="SG3-mu-pNK"/>
                         <outlet property="toggleMenuBBI" destination="6q9-dR-71q" id="UR2-a0-wh1"/>
                         <outlet property="topMenuHeightConstraint" destination="Izj-4t-5A3" id="GQI-Z3-4Yw"/>
